@@ -1,0 +1,78 @@
+\hypertarget{class_board_view}{}\doxysection{Board\+View Class Reference}
+\label{class_board_view}\index{BoardView@{BoardView}}
+
+
+The \mbox{\hyperlink{class_board_view}{Board\+View}} class represent the board of the game.  
+
+
+
+
+{\ttfamily \#include $<$boardview.\+h$>$}
+
+Inheritance diagram for Board\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_board_view}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_view_abd724245debf36076d2c469e7108a98e}{Board\+View}} (Game \&game, int \&count, bool \&can\+Pass)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board_view}{Board\+View}} is the constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_view_af49538bb6d5f11e9db971c4bbf5191b2}\label{class_board_view_af49538bb6d5f11e9db971c4bbf5191b2}} 
+void \mbox{\hyperlink{class_board_view_af49538bb6d5f11e9db971c4bbf5191b2}{draw}} ()
+\begin{DoxyCompactList}\small\item\em draw\+: draw the current board of the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_view_a211f82f4def1be623e15f2134ff0593f}{moves}} (Position pos, \mbox{\hyperlink{class_square_view}{Square\+View}} $\ast$sv)
+\begin{DoxyCompactList}\small\item\em moves color the squares the player can move to \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_board_view}{Board\+View}} class represent the board of the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_view_abd724245debf36076d2c469e7108a98e}\label{class_board_view_abd724245debf36076d2c469e7108a98e}} 
+\index{BoardView@{BoardView}!BoardView@{BoardView}}
+\index{BoardView@{BoardView}!BoardView@{BoardView}}
+\doxysubsubsection{\texorpdfstring{BoardView()}{BoardView()}}
+{\footnotesize\ttfamily Board\+View\+::\+Board\+View (\begin{DoxyParamCaption}\item[{Game \&}]{game,  }\item[{int \&}]{count,  }\item[{bool \&}]{can\+Pass }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_board_view}{Board\+View}} is the constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & is the game we want to draw the board \\
+\hline
+{\em count} & is the moves the current player has done \\
+\hline
+{\em can\+Pass} & check if the current player has passed the ball already \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_view_a211f82f4def1be623e15f2134ff0593f}\label{class_board_view_a211f82f4def1be623e15f2134ff0593f}} 
+\index{BoardView@{BoardView}!moves@{moves}}
+\index{moves@{moves}!BoardView@{BoardView}}
+\doxysubsubsection{\texorpdfstring{moves()}{moves()}}
+{\footnotesize\ttfamily void Board\+View\+::moves (\begin{DoxyParamCaption}\item[{Position}]{pos,  }\item[{\mbox{\hyperlink{class_square_view}{Square\+View}} $\ast$}]{sv }\end{DoxyParamCaption})}
+
+
+
+moves color the squares the player can move to 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position of the square that the player can move to \\
+\hline
+{\em sv} & square\+View that will be colored \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+boardview.\+h\item 
+boardview.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+#include "Model/playerColor.h"
+#include "iostream"
+
+using namespace std;
+namespace diaballik{
+class Player
+{
+    PlayerColor color_;
+public:
+    /*!
+     * \brief Player construct a player.
+     * \param color is the color of a player.
+     */
+    Player(PlayerColor color);
+
+    /*!
+     * \brief getColor gives us the color of a player.
+     * \return the color of a player.
+     */
+    PlayerColor getColor();
+
+    /*!
+     * \brief operator << of injecting an Position into an output stream.
+     * \param outputStream stream in which to inject a.
+     * \param a Player to inject.
+     *
+     * \return ostream after injection.
+     */
+    friend ostream& operator <<(ostream& outputStream, const Player &a);
+
+    /*!
+     * \brief toString return a representation of the player.
+     * \return player.
+     */
+    string toString();
+};
+}
+#endif // PLAYER_H

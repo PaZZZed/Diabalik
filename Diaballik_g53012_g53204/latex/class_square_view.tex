@@ -1,0 +1,153 @@
+\hypertarget{class_square_view}{}\doxysection{Square\+View Class Reference}
+\label{class_square_view}\index{SquareView@{SquareView}}
+
+
+The \mbox{\hyperlink{class_square_view}{Square\+View}} class represent the square of the board.  
+
+
+
+
+{\ttfamily \#include $<$squareview.\+h$>$}
+
+Inheritance diagram for Square\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_square_view}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_square_view_aba3eb52554b8021763f0a04f29b4a8d4}{Square\+View}} (Game \&game, int size, Position pos, int \&count, bool \&can\+Pass)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_square_view}{Square\+View}} is the constructor of the class, create a new square. \end{DoxyCompactList}\item 
+Q\+RectF \mbox{\hyperlink{class_square_view_a672a76860e698a59d576448783bc007f}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em bounding\+Rect create our square(rectangle) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_square_view_ac497646cd8535d7b815dad1b7525272e}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget=nullptr) override
+\begin{DoxyCompactList}\small\item\em paint will paint our squares \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_square_view_a14262a7af08bfa900a1ba235c196e7bd}{set\+Color}} (bool \&color)
+\begin{DoxyCompactList}\small\item\em set\+Color will set a new color \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_square_view_aabbc34679761f7c3ebff62a42155fb50}{check\+Pos}} (Position pos)
+\begin{DoxyCompactList}\small\item\em check\+Pos check if the square can move \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_square_view_aa26f0efeda89db2b02e070d2a61712b0}{mouse\+Press\+Event}} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em mouse\+Press\+Event on mouse click it will do certain actions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_square_view}{Square\+View}} class represent the square of the board. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_square_view_aba3eb52554b8021763f0a04f29b4a8d4}\label{class_square_view_aba3eb52554b8021763f0a04f29b4a8d4}} 
+\index{SquareView@{SquareView}!SquareView@{SquareView}}
+\index{SquareView@{SquareView}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{SquareView()}{SquareView()}}
+{\footnotesize\ttfamily Square\+View\+::\+Square\+View (\begin{DoxyParamCaption}\item[{Game \&}]{game,  }\item[{int}]{size,  }\item[{Position}]{pos,  }\item[{int \&}]{count,  }\item[{bool \&}]{can\+Pass }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_square_view}{Square\+View}} is the constructor of the class, create a new square. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the size of the squares we will create \\
+\hline
+{\em game} & is the current game we will put our squares in \\
+\hline
+{\em pos} & is the position of the square in the board \\
+\hline
+{\em count} & the moves the square can do \\
+\hline
+{\em can\+Pass} & check if the square can pass the ball \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_square_view_a672a76860e698a59d576448783bc007f}\label{class_square_view_a672a76860e698a59d576448783bc007f}} 
+\index{SquareView@{SquareView}!boundingRect@{boundingRect}}
+\index{boundingRect@{boundingRect}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{boundingRect()}{boundingRect()}}
+{\footnotesize\ttfamily Q\+RectF Square\+View\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+bounding\+Rect create our square(rectangle) 
+
+\begin{DoxyReturn}{Returns}
+the square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_square_view_aabbc34679761f7c3ebff62a42155fb50}\label{class_square_view_aabbc34679761f7c3ebff62a42155fb50}} 
+\index{SquareView@{SquareView}!checkPos@{checkPos}}
+\index{checkPos@{checkPos}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{checkPos()}{checkPos()}}
+{\footnotesize\ttfamily bool Square\+View\+::check\+Pos (\begin{DoxyParamCaption}\item[{Position}]{pos }\end{DoxyParamCaption})}
+
+
+
+check\+Pos check if the square can move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & is the position we want to check if the square can move to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_square_view_aa26f0efeda89db2b02e070d2a61712b0}\label{class_square_view_aa26f0efeda89db2b02e070d2a61712b0}} 
+\index{SquareView@{SquareView}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Square\+View\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+mouse\+Press\+Event on mouse click it will do certain actions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & on mouse click \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_square_view_ac497646cd8535d7b815dad1b7525272e}\label{class_square_view_ac497646cd8535d7b815dad1b7525272e}} 
+\index{SquareView@{SquareView}!paint@{paint}}
+\index{paint@{paint}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Square\+View\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+paint will paint our squares 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & is the color the square will take \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_square_view_a14262a7af08bfa900a1ba235c196e7bd}\label{class_square_view_a14262a7af08bfa900a1ba235c196e7bd}} 
+\index{SquareView@{SquareView}!setColor@{setColor}}
+\index{setColor@{setColor}!SquareView@{SquareView}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Square\+View\+::set\+Color (\begin{DoxyParamCaption}\item[{bool \&}]{color }\end{DoxyParamCaption})}
+
+
+
+set\+Color will set a new color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & is the new color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+squareview.\+h\item 
+squareview.\+cpp\end{DoxyCompactItemize}
